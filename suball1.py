@@ -1713,7 +1713,8 @@ def serverX():
         server.start()
         print("Server start at {}".format(url))
     
-    except:
+    except Exception as e:
+        print(e)
         server.stop()
         print("Server Reset")
         time.sleep(2)
