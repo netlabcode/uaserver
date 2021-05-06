@@ -1716,7 +1716,7 @@ def serverX():
     except:
         server.stop()
         print("Server Reset")
-        break
+        time.sleep(2)
 
     serverX()
 
